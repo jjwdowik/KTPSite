@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+        <head>
+                <meta charset="utf-8">
+                <title>ascensor - example - Horizontal</title>
+                <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+                <style>
+                *{
+                        margin: 0;
+                        padding: 0;
+                }
+                
+                body{
+                        font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+                }
+                
+                .floor-1{background: #F9B233;}
+                .floor-2{background: #71B5E5;}
+                .floor-3{background: #B3CE4A;}
+                
+                nav{
+                        position: fixed;
+                        text-align: center;
+                        width: 100%;
+
+                }
+
+                li.theLinks {
+                    background-color: blue;
+                    display: inline-block; 
+                    zoom: 1;
+                    *display: inline;
+                    padding: 10px;
+                }
+
+
+                .theLinks0 {
+                    padding-left: 20px;
+                    
+                }              
+
+                li.selected{
+
+                        color: #0f0;
+                }
+                
+                #ascensorBuilding{
+                        overflow: hidden;
+                }
+
+                .container {
+                  max-width: 900px;
+                  margin-top: 5%;
+                  text-align: center;
+                  margin-left: auto;
+                  margin-right: auto;
+                  width: 100%;
+                  padding: 20px;
+                  box-sizing: border-box; }
+
+                  ul.nav {
+                    width: 100%;
+                  }
+
+
+                </style>
+        </head>
+        <body>
+                <div id="ascensorBuilding">
+                        <div class="floor-1">
+                            <article class="container">
+                                <h1>Kappa Theta Pi</h1>
+                                <!-- Nav tabs -->
+                                <ul class="nav">
+                                  <li><a href="#home" data-toggle="tab">Home</a></li>
+                                  <li><a href="#profile" data-toggle="tab">Profile</a></li>
+                                  <li><a href="#messages" data-toggle="tab">Messages</a></li>
+                                  <li><a href="#settings" data-toggle="tab">Settings</a></li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                  <div class="tab-pane active" id="home"><p>Hey this is a bunch of stuff</p></div>
+                                  <div class="tab-pane" id="profile">...</div>
+                                  <div class="tab-pane" id="messages">...</div>
+                                  <div class="tab-pane" id="settings">...</div>
+                                </div>
+
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt viverra orci, vel vulputate leo lobortis sit amet. Nulla porttitor tincidunt mattis. Maecenas suscipit tortor eget convallis posuere. Nunc fringilla eget ipsum in viverra. Quisque venenatis tempus dictum. Curabitur lacus nisi, ullamcorper eu sem id, viverra facilisis urna. Donec consequat convallis diam sed mattis. Pellentesque auctor faucibus libero vel hendrerit. Donec eu ligula at turpis scelerisque sagittis. Vestibulum in erat quis nunc interdum elementum. Maecenas porta vitae arcu et congue. Maecenas eget ullamcorper velit. Integer gravida ut odio faucibus vehicula. Phasellus consectetur a felis ut ultricies. Sed at dolor nunc. Duis lacinia imperdiet neque, nec semper purus molestie vitae.
+
+Curabitur ullamcorper sit amet libero consequat condimentum. Nullam porttitor risus in orci scelerisque, non fringilla lacus laoreet. Nulla at fermentum magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a leo scelerisque, pulvinar leo id, auctor felis. Nullam in sem purus. Ut lacinia lectus sit amet pulvinar lobortis. Pellentesque mollis dignissim arcu, in volutpat turpis tempus a. Aliquam sit amet elit ac nibh pretium sollicitudin sed ac odio. Quisque id quam vehicula, blandit mi ac, rhoncus neque. Nullam gravida facilisis ultrices. Ut suscipit eu orci id iaculis. Praesent sodales eros et scelerisque lacinia. Etiam malesuada arcu lectus.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget dui imperdiet, adipiscing magna vitae, ultrices quam. Nam et commodo nunc. Nam ut velit et odio euismod vestibulum. Donec cursus ornare nulla, at hendrerit diam iaculis et. Sed vulputate pellentesque purus a tristique. Quisque purus magna, aliquam eget suscipit non, molestie sed nunc. Curabitur ullamcorper justo sapien, nec euismod erat dictum sit amet. Suspendisse ultrices nisi in ultricies dapibus. Cras adipiscing eu ante vel sollicitudin. Aliquam eget elit nec risus bibendum vehicula. Nunc pellentesque est in mauris consequat, id tincidunt quam eleifend.
+
+Nullam rhoncus ante nisi, et sodales augue scelerisque nec. Duis et eros id est tristique bibendum eget sit amet mi. Curabitur nec tortor accumsan, dignissim tortor sit amet, egestas enim. Maecenas imperdiet risus eu justo hendrerit blandit. Aenean vel lectus feugiat, hendrerit mi ac, tempus nisl. Phasellus malesuada vitae tortor sed rutrum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum lacinia mi non tortor lacinia, ut molestie erat congue. Suspendisse potenti. Phasellus ac fermentum odio. Praesent elit libero, dapibus vulputate rhoncus nec, condimentum vitae nisi. Maecenas tempor risus vitae felis volutpat commodo. In egestas odio vel nunc blandit, pulvinar porta augue posuere. Sed turpis purus, porttitor in commodo tempor, sodales at eros.<p>
+
+                            </article>
+                        </div>
+                        <div class="floor-2">Content 2</div>
+                        <div class="floor-3">Content 3</div>
+                </div>
+                <nav class="theNav">
+                        <ul class="links-to-floor">
+                                <li class="theLinks theLinks0"><a>Home</a></li>
+                                <li class="theLinks theLinks1"><a>Rush</a></li>
+                                <li class="theLinks theLinks2"><a>Members</a></li>
+                        </ul>
+                        
+                </nav>
+                <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+            <script src="js/jquery.ascensor.min.js"></script>
+                <script>
+                        var ascensor = $('#ascensorBuilding').ascensor({direction:"x"});
+                        
+                        $(".links-to-floor li").click(function(event, index) {
+                                ascensor.trigger("scrollToStage", $(this).index());
+                        });
+
+                        $(".links-to-floor li").hover(function(event, index) {
+                                ascensor.trigger("scrollToStage", $(this).index());
+                        });                                               
+                        
+                        ascensor.on("scrollStart", function(event, floor){
+                                $(".links-to-floor li").removeClass("selected");
+                                $(".links-to-floor li:eq("+floor.to+")").addClass("selected");
+                        });
+
+
+                        //$('.floor-1').hover(function() {$('.floor-2').show(1000)}, function() {$('.floor-1').hide(1000)});
+
+
+                        
+                        
+                </script>
+                <script src="js/bootstrap.min.js"></script>
+
+        </body>
+</html>

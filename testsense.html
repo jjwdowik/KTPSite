@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Kappa Theta Pi</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name = "viewport" content = "user-scalable=0,width=device-width,initial-scale=1,maximum-scale=1" />
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="js/main.js"></script>
+    <style>
+                .floor-1{background: #F9B233;}
+                .floor-2{background: #71B5E5;}
+                .floor-3{background: #B3CE4A;}
+                
+                nav{
+                        position: absolute;
+                        bottom: 20px;
+                        right: 20px;
+                }
+                
+                li.selected{
+                        color: #0f0;
+                }
+                
+                #ascensorBuilding{
+                        overflow: hidden;
+                }
+        </style>
+</head>
+
+<body>
+
+    <!-- Content for the pages -->
+
+                <div id="ascensorBuilding">
+                        <div class="floor-1">shithere</div>
+                        <div class="floor-2">Content 2</div>
+                        <div class="floor-3">Content 3</div>
+                </div>
+                <nav>
+                        <ul class="links-to-floor">
+                                <li><a>Floor 1</a></li>
+                                <li><a>Floor 2</a></li>
+                                <li><a>Floor 3</a></li>
+                        </ul>
+                        
+                </nav>
+                <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+            <script src="js/jquery.ascensor.min.js"></script>
+                <script>
+                        var ascensor = $('#ascensorBuilding').ascensor({direction:"x"});
+                        
+                        $(".links-to-floor li").click(function(event, index) {
+                                ascensor.trigger("scrollToStage", $(this).index());
+                        });
+                        
+                        ascensor.on("scrollStart", function(event, floor){
+                                $(".links-to-floor li").removeClass("selected");
+                                $(".links-to-floor li:eq("+floor.to+")").addClass("selected");
+                        });
+
+
+                        
+                        
+                </script>
+</body>
+
+</html>
